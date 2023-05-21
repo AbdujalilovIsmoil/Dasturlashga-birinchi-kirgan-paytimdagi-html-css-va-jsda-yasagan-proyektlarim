@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: sans-serif;
+
+}
+body{
+  background-color: rgb(5, 32, 43);
+  min-height: 100vh;
+  width: 100%;
+
+}
+.container{
+  padding: 100px;
+}
+.container h1{
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+.container p {
+  color: white;
+  font-size: 15px;
+  margin: 50px 0;
+  line-height: 25px;
+}
+.scrollTopButton{
+  background-image: url("./img/scroll.png");
+  text-shadow: 0 0 10px white inset;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70px;
+  cursor: pointer;
+  width: 70px;
+  position: fixed;
+  right: 100px;
+  bottom: 700px;
+  z-index: 1000;
+  transition: .5s ease;
+}
+.scrollTopButton.active {
+  position: fixed;
+  right: 100px;
+  bottom: 40px;
+  z-index: 1000;
+  transition: 1s ease;
+  
+}

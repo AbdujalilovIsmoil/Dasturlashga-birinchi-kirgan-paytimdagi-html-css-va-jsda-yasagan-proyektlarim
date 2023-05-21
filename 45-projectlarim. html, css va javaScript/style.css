@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+nav{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(0, 81, 255);
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a{
+  font-size: 17px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+nav ul li a.active {
+  background-color: white;
+  color: rgb(0, 81, 255);
+}
+nav ul li a:hover{
+  background-color: white;
+  color: rgb(0, 81, 255);
+}
+nav label.logo {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.language{
+  appearance: none;
+  outline: none;
+  width: 100px;
+  font-size: 20px;
+  color: rgb(0, 81, 255);
+  border: 1px solid rgb(0, 81, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.language option {
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid rgb(0, 81, 255);
+  outline: none;
+}
+.container {
+  margin: 100px;
+  padding: 100px;
+  background-color: rgb(0, 81, 255);
+  border-radius: 50px;
+}
+.paragraph{
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: white;
+}

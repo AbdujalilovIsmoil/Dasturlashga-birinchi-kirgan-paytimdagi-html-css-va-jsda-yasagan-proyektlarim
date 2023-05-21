@@ -1,0 +1,82 @@
+*{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     text-decoration: none;
+     box-sizing: border-box;
+     -webkit-tap-highlight-color: transparent;
+}
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+.navbar-icon{
+     height: 75px;
+     width: 75px;
+     box-shadow: 0 0 10px black;
+     border-radius: 50px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+     overflow: hidden;
+     transition:  all  .6s ease;
+}
+.navbar-icon.active {
+     width: 425px;
+     overflow: hidden;
+     transition:  all  .6s ease;
+}
+.navbar-icon.active .fa-bars{
+     transform: rotate(90deg);
+     transition:  all  .6s ease;
+}
+.navbar-icon i {
+     font-size: 40px;
+     opacity: 0;
+     cursor: pointer;
+     transition:  all  .6s ease;
+}
+.fa-bars{
+     transform: rotate(0deg);
+     transition:  all  .6s ease;
+     color: blue;
+     opacity: 1 !important;
+}
+.navbar-icon .fa-telegram{
+     color: blue;
+     margin: 0 0 0 25px;
+     transition:  all  .6s ease;
+}
+.navbar-icon 
+.fa-telegram.fas-telegram,
+.fa-youtube.fas-youtube,
+.fa-instagram.fas-instagram{
+     opacity: 1;
+}
+.navbar-icon .fa-youtube.fas-youtube{
+     opacity: 1;
+}
+.navbar-icon .fa-instagram.fas-instagram{
+     opacity: 1;
+}
+.navbar-icon .fa-facebook.fas-facebook{
+     opacity: 1;
+}
+.navbar-icon .fa-twitter.fas-twitter{
+     opacity: 1;
+}
+.navbar-icon .fa-youtube{
+     color: red;
+}
+.navbar-icon .fa-instagram{
+     color: red;
+}
+.navbar-icon .fa-facebook{
+     color: blue;
+}
+.navbar-icon .fa-twitter{
+     color: blue;
+}

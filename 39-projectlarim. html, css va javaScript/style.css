@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container{
+  width: 500px;
+  height: 600px;
+  overflow: hidden;
+}
+.container__images {
+  display: flex;
+  transition: 1s ease;
+  transform: translateX(0);
+}
+.container__images img {
+  width: 500px;
+  height: 550px;
+  object-fit: cover;
+
+  
+}
+.container__buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__buttons button{
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(0, 89, 255);
+  cursor: pointer;
+  color: #FFF;
+  border: 2px solid grey;
+  outline: none;
+}

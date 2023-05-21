@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.password {
+  padding: 7.5px 5px;
+  width: 450px;
+  outline: none;
+  border: none;
+  box-shadow: -3px -3px 3px white,
+                      1px 1px 3px black inset,
+                      -3px -3px 3px white,
+                      1px 1px 2px black inset;
+  font-size: 20px;
+  position: relative;
+}
+
+.eye-1 {
+  position: relative;
+  right: 50px;
+  z-index: 1000;
+  background-image: url("./img/eye-1.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-size: 18px;
+}
+
+.eye-1.active {
+  background-image: url("./img/eye-2.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}

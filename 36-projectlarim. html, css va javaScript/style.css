@@ -1,0 +1,63 @@
+*{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     text-decoration: none;
+     box-sizing: border-box;
+}
+body{
+     background-color: rgb(3, 39, 44);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction:column;
+     min-height: 100vh;
+}
+.container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 5px 0 0 0;
+     flex-direction:column;
+     transition: all .4s ease;
+     cursor: pointer;
+     height: 100px;
+     width: 125px;
+     border-radius: 10px;
+     border: 5px solid white;
+}
+.container .hamburger1{
+     background: white;
+     height: 7px;
+     width: 90px;
+     border-radius: 50px;
+     transform: translateY(-20px);
+     transition: all .4s ease;
+}
+.container .hamburger2{
+     background: white;
+     height: 7px;
+     width: 90px;
+     border-radius: 50px;
+     transform: translateY(25px);
+     transition: all .4s ease;
+}
+.container .hamburger3{
+     background: white;
+     height: 7px;
+     width: 90px;
+     border-radius: 50px;
+     transform: translateY(-10px);
+     opacity: 1;
+     transition: all .4s ease;
+}
+.container.active .hamburger1{
+     transform: translateY(5px) rotate(45deg);
+}
+.container.active .hamburger3{
+     transform: translateX(-100px);
+     opacity: 0;
+}
+.container.active .hamburger2{
+     transform: translateY(-6px) rotate(-45deg);
+}

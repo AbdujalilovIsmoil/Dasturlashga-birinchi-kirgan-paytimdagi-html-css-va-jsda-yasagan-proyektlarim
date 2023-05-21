@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(3, 38, 43);
+}
+.container{
+  height: 100px;
+  width: 100px;
+  background-color: rgb(0, 119, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+.container.active .box{
+  background-color: transparent;
+}
+.container.active{
+  background-color: red;
+  transition: .5s;
+}
+.container.active .box::after{
+  transform: rotate(40deg);
+}
+.container.active .box::before{
+  transform: rotate(-40deg);
+}
+.box{
+  width: 75px;
+  height: 5px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 50px;
+}
+.box::after{
+  content: "";
+  position: absolute;
+  transform: translateY(25px);
+  width: 75px;
+  height: 5px;
+  border-radius: 50px;
+  transition: 0.5s;
+  background-color: #fff;
+}
+.box::before{
+  content: "";
+  position: absolute;
+  transform: translateY(-25px);
+  width: 75px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #fff;
+  transition: 0.5s;
+}

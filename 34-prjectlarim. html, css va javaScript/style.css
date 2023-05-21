@@ -1,0 +1,436 @@
+*{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     text-decoration: none;
+     box-sizing: border-box;
+}
+nav {
+     width: 100%;
+     height: 100px;
+     background-color: rgb(0, 132, 255);
+}
+label.logo {
+     margin: 0 0 0 100px;
+     line-height: 100px;
+     font-size: 25px;
+     font-family: sans-serif;
+     text-transform: uppercase;
+     color: white;
+     font-weight: bolder;
+}
+nav ul {
+     float: right;
+     margin: 0 100px 0 0;
+}
+nav ul li {
+     display: inline-block;
+     line-height: 100px;
+     margin: 0 10px;
+}
+nav ul li a.active {
+     background-color: blue;
+     color: white;
+}
+nav ul li a {
+     padding: 10px 15px;
+     font-weight: bolder;
+     border-radius: 5px;
+     color: white;
+     font-size: 18px;
+     font-family: sans-serif;
+     text-transform: uppercase;
+     transition: all .3s ease;
+}
+nav ul li a:hover{
+     background-color: blue;
+}
+.nav__icon{
+     float: right;
+     display: none;
+     margin: 0 100px 0 0;
+}
+.nav__icon .fa-bars{
+     display: none;
+     line-height: 100px;
+     cursor: pointer;
+}
+.nav__icon .fa-times{
+     display: none;
+     cursor: pointer;
+     line-height: 100px;
+}
+.fa-bars, .fa-times {
+     color: white;
+     font-size: 25px;
+
+}
+.navigation{
+     height: 0;
+     background-color: red;
+     overflow: hidden;
+     width: 100%;
+     transition: all .4s ease;
+}
+.navigation.active {
+     height: 215px;
+     transition: all .4s ease;
+}
+.navigation .ul {
+     text-align: center;
+}
+.navigation .ul .li{
+     display: block; 
+     padding: 15px 10px 10px 10px;
+}
+.navigation .ul .li .a {
+     color: white;
+     font-family: sans-serif;
+     text-transform: uppercase;
+     padding: 5px 10px;
+     border-radius: 5px;
+     transition: all .3s ease;
+}
+.navigation .ul .li .a:hover{
+     background-color: blue;
+     color: white;
+}
+.navigation .ul .li .a.active {
+     background-color: blue;
+     color: white;
+}
+@media only screen and (max-width: 1200px){
+     .navigation{
+          height: 0;
+          background-color: red;
+          overflow: hidden;
+          width: 100%;
+          transition: all .4s ease;
+     }
+}
+@media only screen and (max-width: 1100px) {
+     .nav__icon{
+          display: block;
+     }
+     nav ul li a {
+          display: none;
+          
+     }
+     .nav__icon .fa-bars{
+          display: block;
+     }
+     .navigation{
+          height: 0;
+          background-color: red;
+          overflow: hidden;
+          width: 100%;
+          transition: all .4s ease;
+     }
+     .navigation.active {
+          height: 215px;
+          transition: all .4s ease;
+     }
+     .navigation .ul {
+          text-align: center;
+     }
+     .navigation .ul .li{
+          display: block; 
+          padding: 15px 10px 10px 10px;
+     }
+     .navigation .ul .li .a {
+          color: white;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: all .3s ease;
+     }
+     .navigation .ul .li .a:hover{
+          background-color: blue;
+          color: white;
+     }
+     .navigation .ul .li .a.active {
+          background-color: blue;
+          color: white;
+     }
+}
+@media only screen and (max-width: 700px) {
+     label.logo {
+          margin: 0 0 0 75px;
+          line-height: 100px;
+          font-size: 22.5px;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          color: white;
+          font-weight: bolder;
+     }
+     .fa-bars, .fa-times {
+          color: white;
+          font-size: 22.5px;
+     }
+     .nav__icon{
+          float: right;
+          display: none;
+          margin: 0 75px 0 0;
+     }
+     nav ul li a {
+          display: none;
+     }
+     nav ul {
+          float: right;
+          margin: 0;
+          display: none;
+      }
+     .nav__icon{
+          display: block;
+     }
+     .nav__icon .fa-bars{
+          display: block;
+     }
+     .navigation{
+          height: 0;
+          background-color: red;
+          overflow: hidden;
+          width: 100%;
+          transition: all .4s ease;
+          margin: 0;
+     }
+     .navigation.active {
+          height: 215px;
+          transition: all .4s ease;
+     }
+     .navigation .ul {
+          text-align: center;
+     }
+     .navigation .ul .li{
+          display: block; 
+          padding: 15px 10px 10px 10px;
+     }
+     .navigation .ul .li .a {
+          color: white;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: all .3s ease;
+     }
+     .navigation .ul .li .a:hover{
+          background-color: blue;
+          color: white;
+     }
+     .navigation .ul .li .a.active {
+          background-color: blue;
+          color: white;
+     }
+}
+
+@media only screen and (max-width: 576px) {
+     .fa-bars, .fa-times {
+          color: white;
+          font-size: 20px;
+     }
+     .nav__icon{
+          float: right;
+          display: none;
+          margin: 0 50px 0 0;
+     }
+     label.logo {
+          margin: 0 0 0 50px;
+          line-height: 100px;
+          font-size: 20px;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          color: white;
+          font-weight: bolder;
+     }
+     nav ul li a {
+          display: none; 
+     }
+     nav ul {
+          float: right;
+          margin: 0;
+          display: none;
+      }
+     .nav__icon{
+          display: block;
+     }
+     .nav__icon .fa-bars{
+          display: block;
+     }
+     .navigation{
+          height: 0;
+          background-color: red;
+          overflow: hidden;
+          width: 100%;
+          transition: all .4s ease;
+          margin: 0;
+     }
+     .navigation.active {
+          height: 215px;
+          transition: all .4s ease;
+     }
+     .navigation .ul {
+          text-align: center;
+     }
+     .navigation .ul .li{
+          display: block; 
+          padding: 15px 10px 10px 10px;
+     }
+     .navigation .ul .li .a {
+          color: white;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: all .3s ease;
+     }
+     .navigation .ul .li .a:hover{
+          background-color: blue;
+          color: white;
+     }
+     .navigation .ul .li .a.active {
+          background-color: blue;
+          color: white;
+     }
+}
+
+@media only screen and (max-width: 360px) {
+     .fa-bars, .fa-times {
+          color: white;
+          font-size: 22.5px;
+     }
+     .nav__icon{
+          float: right;
+          display: none;
+          margin: 0 25px 0 0;
+     }
+     label.logo {
+          margin: 0 0 0 25px;
+          line-height: 100px;
+          font-size: 18px;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          color: white;
+          font-weight: bolder;
+     }
+     nav ul li a {
+          display: none;
+     }
+     nav ul {
+          float: right;
+          margin: 0;
+          display: none;
+      }
+     .nav__icon .fa-bars{
+          display: block;
+     }
+     .nav__icon{
+          display: block;
+     }
+     .navigation{
+          height: 0;
+          background-color: red;
+          overflow: hidden;
+          width: 100%;
+          transition: all .4s ease;
+          margin: 0;
+     }
+     .navigation.active {
+          height: 215px;
+          transition: all .4s ease;
+     }
+     .navigation .ul {
+          text-align: center;
+     }
+     .navigation .ul .li{
+          display: block; 
+          padding: 15px 10px 10px 10px;
+     }
+     .navigation .ul .li .a {
+          color: white;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: all .3s ease;
+     }
+     .navigation .ul .li .a:hover{
+          background-color: blue;
+          color: white;
+     }
+     .navigation .ul .li .a.active {
+          background-color: blue;
+          color: white;
+     }
+}
+
+
+@media only screen and (max-width: 280px) {
+     .fa-bars, .fa-times {
+          color: white;
+          font-size: 22.5px;
+     }
+     .nav__icon{
+          float: right;
+          display: none;
+          margin: 0 20px 0 0;
+     }
+     label.logo {
+          margin: 0 0 0 20px;
+          line-height: 100px;
+          font-size: 17px;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          color: white;
+          font-weight: bolder;
+     }
+     nav ul li a {
+          display: none;
+     }
+     nav ul {
+          float: right;
+          margin: 0;
+          display: none;
+      }
+     .nav__icon{
+          display: block;
+     }    
+     .nav__icon .fa-bars{
+          display: block;
+     }
+     .navigation{
+          height: 0;
+          background-color: red;
+          overflow: hidden;
+          width: 100%;
+          transition: all .4s ease;
+          margin: 0;
+     }
+     .navigation.active {
+          height: 215px;
+          transition: all .4s ease;
+     }
+     .navigation .ul {
+          text-align: center;
+     }
+     .navigation .ul .li{
+          display: block; 
+          padding: 15px 10px 10px 10px;
+     }
+     .navigation .ul .li .a {
+          color: white;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: all .3s ease;
+     }
+     .navigation .ul .li .a:hover{
+          background-color: blue;
+          color: white;
+     }
+     .navigation .ul .li .a.active {
+          background-color: blue;
+          color: white;
+     }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./style.css">
+     <title>JavaScript | Kalkulator | Project</title>
+</head>
+<body>
+     <!-- Assalomu alaykum. Agarda kodlarimni ko'chirayotgan bo'lsangiz iltimos tushunib ko'chiring bu o'ziz uchun ham foydali.  -->
+     <form name="forms">
+          <input type="text" name="answers">
+
+          <input type="button" value="AC" onclick="forms.answers.value = ' '">
+          <input type="button" value="DEL" onclick="forms.answers.value = forms.answers.value.substr(0,forms.answers.value.length - 1)">
+          <input type="button" value="%" onclick="forms.answers.value += '%'">
+          <input type="button" value="/" onclick="forms.answers.value += '/'">
+
+          <input type="button" value="7" onclick="forms.answers.value += '7'">
+          <input type="button" value="8" onclick="forms.answers.value += '8'">
+          <input type="button" value="9" onclick="forms.answers.value += '9'">
+          <input type="button" value="*" onclick="forms.answers.value += '*'">
+
+          <input type="button" value="4" onclick="forms.answers.value += '4'">
+          <input type="button" value="5" onclick="forms.answers.value += '5'">
+          <input type="button" value="6" onclick="forms.answers.value += '6'">
+          <input type="button" value="-" onclick="forms.answers.value += '-'">
+
+          <input type="button" value="1"  onclick="forms.answers.value += '1'">
+          <input type="button" value="2"  onclick="forms.answers.value += '2'">
+          <input type="button" value="3"  onclick="forms.answers.value += '3'">
+          <input type="button" value="+"  onclick="forms.answers.value += '+'">
+
+          <input type="button" value="0"  onclick="forms.answers.value += '0'">
+          <input type="button" value="00"  onclick="forms.answers.value += '00'">
+          <input type="button" value="."  onclick="forms.answers.value += '.'">
+          <input type="button" value="="  onclick="forms.answers.value = eval(forms.answers.value)">
+
+     </form>
+</body>
+</html>
